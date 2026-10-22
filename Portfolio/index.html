@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">Sharal.</a>
+
+        <nav>
+            <button onclick="showSlide(0)">Home</button>
+            <button onclick="showSlide(1)">About</button>
+            <button onclick="showSlide(2)">Skills</button>
+            <button onclick="showSlide(3)">Projects</button>
+            <button onclick="showSlide(4)">Certifications</button>
+            <button onclick="showSlide(5)">Achievements</button>
+            <button onclick="showSlide(6)">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="slide active" id="home">
+            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hi, I'm Sharal!</h1>
+            <h2>Aspiring Software Developer</h2>
+            <p>Second-year B.Sc. Information Technology student at KG College of Arts and Science.</p>
+            <button class="next-btn" onclick="showSlide(1)">Explore My Portfolio →</button>
+        </section>
+
+        <section class="slide" id="about">
+            <p class="eyebrow">GET TO KNOW ME</p>
+            <h1>About Me</h1>
+            <p>I'm Sharal, an Information Technology student passionate about software development and creating meaningful digital experiences.</p>
+            <p>I enjoy public speaking, communication, and classical dance.</p>
+            <p>My goal is to grow into a skilled software developer.</p>
+            <button class="next-btn" onclick="showSlide(2)">Next: Skills →</button>
+        </section>
+
+        <section class="slide" id="skills">
+            <p class="eyebrow">WHAT I CAN DO</p>
+            <h1>My Skills</h1>
+            <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Communication</span>
+            </div>
+            <button class="next-btn" onclick="showSlide(3)">Next: Projects →</button>
+        </section>
+
+        <section class="slide" id="projects">
+            <p class="eyebrow">WHAT I'VE BUILT</p>
+            <h1>My Projects</h1>
+            <h2>Nexora</h2>
+            <p>A college mini-project focused on helping students discover scholarship opportunities and access information that can support their education.</p>
+            <p><strong>Role:</strong> Team collaboration with a classmate.</p>
+            <button class="next-btn" onclick="showSlide(4)">Next: Certifications →</button>
+        </section>
+
+        <section class="slide" id="certifications">
+            <p class="eyebrow">LEARNING & GROWING</p>
+            <h1>Certifications</h1>
+            <ul class="certificate-list">
+                <li>Front-End Web Development (HTML, CSS & Bootstrap)</li>
+                <li>Hosting a Static Website in AWS S3</li>
+                <li>Essentials with Azure Fundamentals</li>
+                <li>Managing Azure Infrastructure: Storage, Monitoring & Backup</li>
+            </ul>
+            <button class="next-btn" onclick="showSlide(5)">Next: Achievements →</button>
+        </section>
+
+        <section class="slide" id="achievements">
+            <p class="eyebrow">MILESTONES</p>
+            <h1>Achievements</h1>
+            <ul class="certificate-list">
+                <li>Two Best Prepared Speech certificates</li>
+                <li>Toastmasters member</li>
+                <li>Team collaboration on Nexora</li>
+                <li>Developing communication and public-speaking skills</li>
+            </ul>
+            <button class="next-btn" onclick="showSlide(6)">Next: Contact →</button>
+        </section>
+
+        <section class="slide" id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h1>Contact Me</h1>
+            <p>Email: <a href="mailto:sharalmohankumar@gmail.com">sharalmohankumar@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sharal-m-a46852431/" target="_blank" rel="noopener noreferrer">Visit my LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/sharalmohankumar-cmd" target="_blank" rel="noopener noreferrer">Visit my GitHub</a></p>
+            <button class="next-btn" onclick="showSlide(0)">Back to Home ↺</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <button onclick="previousSlide()">← Previous</button>
+        <span id="slide-count">1 / 7</span>
+        <button onclick="nextSlide()">Next →</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
